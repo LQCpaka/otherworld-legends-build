@@ -1,6 +1,26 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
+.root-container {
+    @apply flex min-h-screen flex-1 flex-col bg-cover bg-top px-5 sm:px-10 md:px-16;
+  }
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.desire-shadowinner{
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.no-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+.scroll-container { 
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), black 20%, black 80%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), black 20%, black 80%, rgba(0, 0, 0, 0));
+}
+  .clip-triangle {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
 .border-zero {
   border-right-width: 0 !important;
 }
